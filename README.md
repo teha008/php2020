@@ -12,7 +12,7 @@ The video covers all the basic things about PHP.
  - Strings
  - Arrays
  - Conditionals
- - Loops
+ - **Loops**
  - Functions
  - Dates
  - Including PHP files

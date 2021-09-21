@@ -1,24 +1,66 @@
 <?php
 
-$age = 20;
+$age = 25;
 $salary = 300000;
 
-// Sample if
+// // 1. if문 샘플:
+// if ($나이 === 20) {
+//   echo "1" . '<br>';
+// }
 
-// Without circle braces
+// // 2. if문 중괄호 없이 
+// if ($나이 === 20) echo "1" . '<br>';
 
-// Sample if-else
+// // 3. 샘플 if-else
+// if ($나이 > 20) {
+//   echo "1" . '<br>';
+// } else {
+//   echo "2" . "<br>";
+// }
 
-// Difference between == and ===
+// // 4. ==와 ===의 차이
+// echo $age == 20;
+// echo $age == '20';
 
-// if AND
+// echo $age === 20;
+// echo $age === '20';
 
-// if OR
+// // 5. if AND
+// if ($age > 20 || $salary === 300000) {
+//   echo "Do something";
+// }
 
-// Ternary if
 
-// Short ternary
+// // if OR
 
-// Null coalescing operator
+// // 6. Ternary if
+// echo $age < 22 ? 'Young' : 'Old';
 
-// switch
+// 7. Short ternary
+$myAge = $age ?: 118;
+echo '<pr>';
+var_dump($myAge);
+'</pr>';
+
+// 8. null 병합 연산자
+$myName = isset($name) ? $name : 'Guest';
+$myName = $name ?? 'John';
+
+// 9. switch
+$randNum = random_int(0, 3);
+// echo $randNum;
+
+$userRole = ['admin', 'editor', 'user', 'cho'];
+switch ($userRole[$randNum]) {
+  case 'admin':
+    echo 'admin';
+    break;
+  case 'editor':
+    echo 'editor';
+    break;
+  case 'user':
+    echo 'user';
+    break;
+  default:
+    echo 'Invalid role';
+}
