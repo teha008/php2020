@@ -1,0 +1,17 @@
+{
+  "name": "teha007/15_autoloading",
+  "autoload": {
+    "psr-4": {
+      "app\\": "./app"
+    }
+  },
+  "authors": [
+    {
+      "name": "조상호 컴퓨터",
+      "email": "teha007@naver.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^7.3"
+  }
+}
